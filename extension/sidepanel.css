@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin:0; padding:18px; background:#f7f8fc; color:#202124; font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif; }
+header { display:flex; gap:12px; align-items:center; margin-bottom:20px; }
+.logo { display:grid; place-items:center; width:42px; height:42px; border-radius:14px; background:#e8eaff; color:#4945d6; font-size:24px; }
+h1 { margin:0; font-size:18px; } header p { margin:3px 0 0; color:#5f6368; }
+label { display:block; font-weight:650; margin:16px 0 7px; }
+textarea,select { width:100%; border:1px solid #dadce0; border-radius:10px; padding:11px; background:white; color:#202124; font:inherit; }
+textarea { resize:vertical; } textarea:focus,select:focus { outline:2px solid #c5c8ff; border-color:#6965e8; }
+button { border:0; border-radius:9px; padding:10px 12px; margin-top:10px; font:inherit; font-weight:650; cursor:pointer; }
+button:disabled { opacity:.45; cursor:not-allowed; } .primary { background:#4f46e5; color:white; }
+#generate { width:100%; } .buttons { display:flex; gap:8px; } .buttons button { flex:1; }
+.secondary { background:#e8eaf0; color:#252631; } #status { min-height:22px; margin-top:10px; color:#5f6368; font-size:12px; }
+.note { color:#5f6368; font-size:12px; margin-top:16px; }

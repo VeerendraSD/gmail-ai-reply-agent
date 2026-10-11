@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail AI Reply (Local)",
+  "version": "1.0.0",
+  "description": "Draft Gmail replies with a local Ollama model.",
+  "permissions": ["sidePanel", "activeTab", "tabs"],
+  "host_permissions": ["https://mail.google.com/*", "http://127.0.0.1:3030/*"],
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "content_scripts": [{
+    "matches": ["https://mail.google.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
